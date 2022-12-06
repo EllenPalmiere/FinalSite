@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ellen Palmiere</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="stylesheet.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+ .lacrosse {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.additionalinfo {
+    text-align: center;
+}
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container1">
+<div class="logo">
+<img src="pimages/plogo2.png" alt="logo">
+</div>
+<nav>
+    <div><a href="#home">Home</a></div>
+    <div><a href="#about">Lauren's Message</a></div>
+    <div><a href=#projects>Exercises</a></div>
+    <div><a href=#takeaction>Take Action</a></div>
+    <div><a href=#timelycare>Resources</a></div>
+</nav>
+<div class="overlay">
+    <p class="back" id="home">Dukes Let's Talk</p>
+</div>
+</div>
+<div class="container2" id="projects">
+<div class="web1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/one.jpeg" alt="exercises">
+    <p>Opportunities: JMU Athletics offers weekly activities to help refocus and calm your body. Yoga, body positivity, and many more topics are centralized around helping student athletes maintain a good headspace.</p>
+</div>
+<div class="web2" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/two.jpeg" alt="JMU saac instagram">
+    <p>JMU SAAC provides tips on their instagram page that focus on mental health. Journaling, meditation and more can help others practice mindfulness. </p>
+</div>
+<div class="web3" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/three.jpeg" alt="jmu football player helping kids">
+    <p>Remembering why you wanted to play this sport is important. Coach or help kids be active and have fun during the process. </p>
+</div>
+</div>
+<div class="container3">
+    <div class="single" id="about">
+        <h1>Lauren's Story</h1>
+        <img src="pimages/laurenbernett.jpeg" alt="lauren bernett">
+        <p>April 25th, 2022 Lauren Bernett decided to end her life. She was a star on the James Madison University Softball team and more importantly, a great person. Friends and teammates described her as always having a smile on her face and effortlessly being able to make others laugh. The JMU community was in shock and will never fully recover from this tragedy. Moving forward, we are using Lauren's story to check in on friends and teammates, giving an opportunity to speak up.</p>
+</div>
+    </div>
+<div class="container4" id="takeaction">
+    <div class="takeaction">
+        <div class="background">
+        <h1>Take Action</h1>
+        <p>Student-Athletes do not always have to be tough. The stigma around mental health and athletes is harmful, so what can we do to stop it? A not so easy answer is putting the student before athlete. It's okay to not be okay, speak up if you need to focus on your mental health, talk to your teammates who are going through the same situation. Together, we can make this into a positive movement. </p> 
+    </div>
+</div>
+    </div>
+
+    <div class="container5" id="timelycare">
+<div class="web4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/timelycare.jpg" alt="timelycare">
+    <p>The Timely Care app is a resource provided that allows 24 hour access to virtual care, self-care, and well-being tools.</p>
+    </div>
+    <div class="web5" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+        <h1>Timely Care</h1>
+    </div>
+    <div class="web6" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+        <img src="pimages/timelycare2.jpg" alt="timelycare app">
+     <p>Simply input your medical history/information and you are set. This app allows student-athletes to schedule a free meeting with counselors as well as chat through the app (this can be done anonymously).</p>
+    </div>
+    </div>
+    <div class="container6">
+        <div class="additionalinfo">
+            <div class="dr.bob">
+            <h1>Additional Information</h1>
+            <p>Dr. Bob Harmison is the Sport Psychologist for James Madison University. He is a Certified Mental Performance Coach (CMPC) focusing on strategies for developing mental toughness and achieving peak performance in sport. If you need help or ann appointment: 540-568-7959. Miller Hall Room G020. </p>
+        </div>
+        <div class="container7">
+            <div class="single" id="unite">
+                <h1>End The Stigma</h1>
+                <img src="pimages/unite.jpg" alt="JMU students unite">
+                <p>You are never alone on your journey here at JMU. The community surrounding you is like no other. These resources and practices could help someones life immensely. Check on your friends and teammates daily, have those uncomfortable conversations and make sure you and them are seeking help. You are never alone. </p>
+        </div>
+        </div>
+
+    </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+
+<script>
+/* Scroll to top when arrow up clicked BEGIN */
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if (height > 100) {
+$('#back2Top').fadeIn();
+} else {
+$('#back2Top').fadeOut();
+}
+});
+$(document).ready(function() {
+$("#back2Top").click(function(event) {
+event.preventDefault();
+$("html, body").animate({ scrollTop: 0 }, "slow");
+return false;
+});
+
+});
+/* Scroll to top when arrow up clicked END */
+</script>
+</body>
+</html>
